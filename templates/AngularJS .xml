@@ -1,0 +1,8 @@
+<templateSet group="AngularJS ">
+  <template name="readf" value="BufferedReader bufferedReader = new BufferedReader(new FileReader($FILE$));&#10;        String line = bufferedReader.readLine();&#10;        while (line!=null){&#10;            $END$&#10;            line=bufferedReader.readLine();&#10;        }" description="Reading File" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
