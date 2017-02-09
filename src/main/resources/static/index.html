@@ -1,0 +1,22 @@
+<html>
+<head ng-app="led">
+    <!--<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css"/>-->
+
+    <script type="text/javascript" src="App.js"></script>
+    <script type="text/javascript" src="bootstrap.min.css"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+</head>
+<body>
+<button class="btn btn-danger" onclick="toggleLed('RED')">Red</button>
+<button class="btn btn-success" onclick="toggleLed('GREEN')">Green</button>
+<button class="btn btn-primary" onclick="toggleLed('BLUE')">Blue</button>
+<button class="btn btn-default" onclick="allOff()">All Off</button>
+    <input id="RED" type="range"/>
+    <input id="GREEN" type="range"/>
+    <input id="BLUE" type="range"/>
+    <button class="btn-primary" onclick="modify()">Submit</button>
+</div>
+
+
+</body>
+</html>
