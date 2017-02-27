@@ -1,0 +1,16 @@
+<templateSet group="user">
+  <template name="cons" value="console.log($SELECTION$);" description="console.log" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="directive" value="directive('$NAME$', ['$DEPENDENCY$', function($DEPENDENCY$){&#10;    return {&#10;        restrict:'$RESTRICT$',&#10;        templateUrl:'$TEMPLATE$',&#10;        $END$&#10;    }&#10;}]);" description="Angular directive" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="DEPENDENCY" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="RESTRICT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+</templateSet>
