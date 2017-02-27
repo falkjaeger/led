@@ -20,8 +20,8 @@ public class Main {
 
     public static void main(String args[]) throws InterruptedException, IOException {
         final PiFace piface = new PiFaceDevice(PiFace.DEFAULT_ADDRESS, Spi.CHANNEL_0);
-        SwitchHandler switchHandler = new SwitchHandler(piface);
-        switchHandler.initListener();
+//        SwitchHandler switchHandler = new SwitchHandler(piface);
+//        switchHandler.initListener();
         LedHandler ledHandler = new LedHandler(piface);
         Spark.port(8080);
         Spark.staticFiles.location("/static");
@@ -46,6 +46,10 @@ public class Main {
             print(timeout);
             print(led.name());
             ledHandler.modifyLed(timeout,led);
+            return "";
+        });
+        post("/stopIt", (Request req, Response res) -> {
+            ledHandler.stopIt();
             return "";
         });
     }

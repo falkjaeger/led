@@ -11,12 +11,12 @@
 <button class="btn btn-success" onclick="toggleLed('GREEN')">Green</button>
 <button class="btn btn-primary" onclick="toggleLed('BLUE')">Blue</button>
 <button class="btn btn-default" onclick="allOff()">All Off</button>
-    <input id="RED" type="range"/>
-    <input id="GREEN" type="range"/>
-    <input id="BLUE" type="range"/>
-    <button class="btn-primary" onclick="modify()">Submit</button>
+    <input id="RED" type="range" onchange="modify('RED')"/>
+    <input id="GREEN" type="range" onchange="modify('GREEN')"/>
+    <input id="BLUE" type="range" onchange="modify('BLUE')"/>
+    <!--<button class="btn-primary" onclick="modify()">Submit</button>-->
 </div>
-
+<button onclick="stopIt()">Stop it</button>
 
 </body>
 </html>
